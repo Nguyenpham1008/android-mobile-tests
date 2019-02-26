@@ -19,9 +19,9 @@ Mobile.comment('Story: Verify correct alarm message')
 Mobile.comment('Given that user has started an application')
 
 'Get full directory\'s path of android application'
-def appPath = PathUtil.relativeToAbsolutePath(GlobalVariable.G_AndroidApp, RunConfiguration.getProjectDir())
+//def appPath = PathUtil.relativeToAbsolutePath(GlobalVariable.G_AndroidApp, RunConfiguration.getProjectDir())
 
-Mobile.startApplication(appPath, false)
+Mobile.startApplication("kobiton-store:26204", false)
 
 Mobile.comment('And he navigates the application to Activity form')
 
